@@ -29,7 +29,7 @@ auth.twitter_oauth = {
   token: '1497107804381130752-9WSOEIa1lKudxrD3EzQLGHNBj46kcE',
   token_secret: 'ttDvAqAVW2jaLYQqUMdVsr0e9WpIqzMwDSNfJYbT3voHq'
 }
-auth.twitter_webhook_environment = process.env.TWITTER_WEBHOOK_ENV
+auth.twitter_webhook_environment = 'Development'
 
 
 // basic auth middleware for express
