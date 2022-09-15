@@ -17,17 +17,17 @@ const RequiredEnv = [
   'TWITTER_WEBHOOK_ENV',
 ]
 
-if (!RequiredEnv.every(key => typeof process.env[key] !== 'undefined')) {
+/*if (!RequiredEnv.every(key => typeof process.env[key] !== 'undefined')) {
   console.error(`One of more of the required environment variables (${RequiredEnv.join(', ')}) are not defined. Please check your environment and try again.`)
   process.exit(-1)
-}
+}*/
 
 // twitter info
 auth.twitter_oauth = {
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  token: process.env.TWITTER_ACCESS_TOKEN,
-  token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+  consumer_key: 'pnRZ0bkzn9169J6m869OufXTP',
+  consumer_secret: '7ZQHfE3ajxZUNtFfBPxUIYqNuTbUHV64VcxbGE7kDhmFDItuea',
+  token: process.env.'1497107804381130752-9WSOEIa1lKudxrD3EzQLGHNBj46kcE',
+  token_secret: 'ttDvAqAVW2jaLYQqUMdVsr0e9WpIqzMwDSNfJYbT3voHq'
 }
 auth.twitter_webhook_environment = process.env.TWITTER_WEBHOOK_ENV
 
