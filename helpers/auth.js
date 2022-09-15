@@ -26,7 +26,7 @@ const RequiredEnv = [
 auth.twitter_oauth = {
   consumer_key: 'pnRZ0bkzn9169J6m869OufXTP',
   consumer_secret: '7ZQHfE3ajxZUNtFfBPxUIYqNuTbUHV64VcxbGE7kDhmFDItuea',
-  token: process.env.'1497107804381130752-9WSOEIa1lKudxrD3EzQLGHNBj46kcE',
+  token: '1497107804381130752-9WSOEIa1lKudxrD3EzQLGHNBj46kcE',
   token_secret: 'ttDvAqAVW2jaLYQqUMdVsr0e9WpIqzMwDSNfJYbT3voHq'
 }
 auth.twitter_webhook_environment = process.env.TWITTER_WEBHOOK_ENV
