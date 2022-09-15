@@ -34,12 +34,12 @@ auth.twitter_webhook_environment = 'Development'
 
 // basic auth middleware for express
 
-if (typeof process.env.BASIC_AUTH_USER !== 'undefined' &&
-  typeof process.env.BASIC_AUTH_PASSWORD !== 'undefined') {
+if (typeof 'admin' !== 'undefined' &&
+  typeof 'bluebird' !== 'undefined') {
     auth.basic = httpAuth.connect(httpAuth.basic({
         realm: 'admin-dashboard'
     }, function(username, password, callback) {
-        callback(username === process.env.BASIC_AUTH_USER && password === process.env.BASIC_AUTH_PASSWORD)
+        callback(username === 'admin' && password === 'bluebird')
     }))
 } else {
   console.warn([
