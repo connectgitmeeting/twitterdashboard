@@ -24,22 +24,22 @@ const RequiredEnv = [
 
 // twitter info
 auth.twitter_oauth = {
-  consumer_key: 'pnRZ0bkzn9169J6m869OufXTP',
-  consumer_secret: '7ZQHfE3ajxZUNtFfBPxUIYqNuTbUHV64VcxbGE7kDhmFDItuea',
-  token: '1497107804381130752-9WSOEIa1lKudxrD3EzQLGHNBj46kcE',
-  token_secret: 'ttDvAqAVW2jaLYQqUMdVsr0e9WpIqzMwDSNfJYbT3voHq'
+  consumer_key: 'gKeONkA8ysYPOoPC0wsBD505Y',
+  consumer_secret: 'd3MLrmVw44N5tRkV8vxZGF62Hyi7E3GH5zC93eR9qPW0DFUxdl',
+  token: '1497107804381130752-hvyQCDefazNcfHHfbnASWvoTjKcik0',
+  token_secret: 'RKwjnYC4PD7zQf276y9OOt1eFFpWitVEHHxsDwDIC5Z6R'
 }
 auth.twitter_webhook_environment = 'Development'
 
 
 // basic auth middleware for express
 
-if (typeof 'admin' !== 'undefined' &&
-  typeof 'bluebird' !== 'undefined') {
+if (typeof 'Ukfbconnect@gmail.com' !== 'undefined' &&
+  typeof 'Qwerty@12345' !== 'undefined') {
     auth.basic = httpAuth.connect(httpAuth.basic({
         realm: 'admin-dashboard'
     }, function(username, password, callback) {
-        callback(username === 'admin' && password === 'bluebird')
+        callback(username === 'Ukfbconnect@gmail.com' && password === 'Qwerty@12345')
     }))
 } else {
   console.warn([
