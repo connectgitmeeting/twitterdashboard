@@ -22,7 +22,8 @@ app.use(passport.initialize());
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: { secure: true }
 }))
 
 // start server
