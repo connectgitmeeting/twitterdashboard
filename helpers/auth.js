@@ -34,12 +34,12 @@ auth.twitter_webhook_environment = 'Development'
 
 // basic auth middleware for express
 
-if (typeof 'Ukfbconnect@gmail.com' !== 'undefined' &&
-  typeof 'Qwerty@12345' !== 'undefined') {
+if (typeof 'admin' !== 'undefined' &&
+  typeof 'bluebird' !== 'undefined') {
     auth.basic = httpAuth.connect(httpAuth.basic({
         realm: 'admin-dashboard'
     }, function(username, password, callback) {
-        callback(username === 'Ukfbconnect@gmail.com' && password === 'Qwerty@12345')
+        callback(username === 'admin' && password === 'bluebird')
     }))
 } else {
   console.warn([
